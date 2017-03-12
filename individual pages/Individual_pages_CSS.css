@@ -1,12 +1,16 @@
-div.container {
-    font-family:  'Comfortaa', sans-serif;
+body {
+    background-color: #06050a;
+    margin:0px;
+}
+
+div.container1 {
+    font-family:  'Comfortaa', cursive;
     margin: 0 auto;
     padding: 15px;
     text-align: center;
-	}
-
-div.container a {
-    color: #FFF;
+}
+div.container1 a {
+    color: #FFF;        
     font-size: 15px;
     margin: 6px;
     padding: 6px 6px;
@@ -14,13 +18,12 @@ div.container a {
     z-index: 0;
     cursor: pointer;
     text-decoration: none;
-	}
-
+}
 .lime {
-    background: #c0ca33;
-	}
-
-div.pullUp a:before	{
+    background: rgba(0,0,0,0);
+}
+div.pullUp a:before
+{
     position: absolute;
     width: 100%;
     height: 2px;
@@ -30,48 +33,62 @@ div.pullUp a:before	{
     background: #FFF;
     opacity: 0.3;
     transition: all 0.3s;
-	}
-
-div.pullUp a:hover:before {
+}
+div.pullUp a:hover:before
+{
     height: 100%;
+}
+
+img.picture {
+	margin: 0% 5% 0% 5%;
+	border-left: 4px solid white;
+	border-top: 4px solid white; 
+	width: 280px;
+	height: 280px;
 	}
-
-body {
-	background-color: black;
-	margin: 0px;
-	}
-
-div.wrap img {
-    border-radius: 8px;
-    }
-
-img.header {
-	display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-	max-width: 90%;
-    height: auto;
-	}
-
-
-div.body_text {
-	color: white;
-	font-family: 'Comfortaa', cursive;
-	padding: 0% 10% 0% 10%
-	}
-
 
 h1 {
+  text-align: center;
+  font-family:'Arsenal';
+  padding: 50px 10px 120px 10px;
+  font-size: 70px;
+  color: white;
+  margin: auto;
+  width: 700px;
+  transition: 0.5s ease;
+  height: 10px;    
+}
+
+h2 {
+	margin: 5% 5% 0% 5%;
+	font-size: 40px;
+	text-align: right;
+	font-family: 'Playfair Display';
+	font-weight: 200;
+	word-spacing:0.10em;
+	color:white;
+}
+
+#text-portion {
+border: 2px solid white;
+padding: 15px;
+position: absolute;
+margin: 10% 5% 5% 5%;
+color:white;
+}
+
+h3 {
+	text-align: left;
+	font-family:'Comfortaa', cursive;
 	font-size: 24px;
 	font-weight: bold;
 	}
 
 p {
+	font-family:'Comfortaa', cursive;
 	font-size: 18px;
 	text-align: justify;
-	}
+		}
 
 a {
     color: #c0ca33;
@@ -80,3 +97,35 @@ a {
 a:visited {
     color: grey;
 	}
+
+div.copyright {
+  text-align: center;
+  color: white;
+  font-size: 12;
+  font-weight: bold;
+  font-family:  'Comfortaa', cursive;
+}
+#text-portion:after {
+  content: "";
+  display: block;
+}
+.copyright {
+  display: block;
+  position: relative;
+  margin-bottom: 0%;
+  margin-top: 50%;
+}
+@media (max-width: 500px) {
+  div.container1 {
+    font-family: 'Comfortaa', cursive;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 29px;
+    text-align: center;
+  }
+}
+
+
+
+
+
