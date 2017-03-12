@@ -1,0 +1,38 @@
+body {
+  text-align:center;
+  margin: 0px;
+  background-color: #06050a;
+}
+div.container1 {
+    font-family:  'Comfortaa', cursive;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+div.container1 a {
+    color: #FFF;
+    font-size: 15px;
+    margin: 6px;
+    padding: 6px 6px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.lime {
+    background: rgba(0,0,0,0);
+}
+div.pullUp a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+div.pullUp a:hover:before {
+    height: 100%;
+}

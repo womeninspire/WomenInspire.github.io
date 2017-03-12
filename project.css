@@ -1,0 +1,177 @@
+body {
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  background: url("Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+h1 {color: white;
+  padding: 60px;
+  font-family: 'Comfortaa', cursive;
+}
+
+p {color: white;
+font-size: 30px;
+font-weight: bold;
+font-family: 'Comfortaa', cursive;
+}
+
+.carousel-inner {
+  color: white;
+height: 400px;
+font-family: 'Arsenal', sans-serif;
+}
+
+.carousel-indicators {
+  height: 0px;
+}
+
+div.item {
+  padding-top:110px;
+}
+
+input {
+     border: 0;
+     padding: 10px;
+     font-size: 18px;
+   }
+
+input[type="submit"] {
+     background: black;
+     color: white;
+}
+
+a.nav-link:link
+{
+   color: white;
+   text-decoration: none;
+   font-size: 50px;
+   font-weight: 300;
+}
+a.nav-link:visited
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: white;
+   text-decoration: none;
+}
+
+.contact-info {
+  color: white;
+}
+
+.copyright {
+  color: white;
+  font-size: 12;
+  font-weight: bold;
+}
+
+.text-off-white {
+ color: white;
+}
+
+.contact-form {
+  color: white;
+}
+
+div.container1 {
+    font-family:  'Comfortaa', cursive;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+div.container1 a {
+    color: #FFF;
+    font-size: 15px;
+    margin: 6px;
+    padding: 6px 6px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.gray a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.gray a:hover:before
+{
+    height: 100%;
+}
+
+#thankyoubutton {
+color: black;
+}
+
+#submitbutton {
+  color: black;
+  margin-top:15px;
+}
+
+ul.contact-address {
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.contact-address li i {
+  margin-right: 60px;
+}
+
+ul.contact-address li div {
+
+}
+.no-i {
+    margin-left: 70.66px;
+}
+
+ul.contact-address li {
+  text-align: justify;
+}
+
+#logowomeninspire
+{
+position: absolute;
+left: 10;
+top: 16;
+font-size: 15px;
+}
+
+.scrolltotop
+{
+color: white;
+}
+
+.socialmedia
+{text-decoration: none;
+  color: white;
+  word-spacing: 6px;
+  visibility: visible;
+}
+
+.fa {
+  color: white;
+}

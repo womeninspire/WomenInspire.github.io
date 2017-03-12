@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Involved</title>
+  <link href="https://fonts.googleapis.com/css?family=Arsenal|Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="jvectormap.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="themap.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-jvectormap.2.js"></script>
+  <script src="jquery-jvectormap-world-mill.js"></script>
+</head>
+<body>
+<div class="container lime pullUp">
+    <a href="#">HOME</a>
+    <a href="#">PROFILES</a>
+    <a href="#">SPOTLIGHT</a>
+    <a href="#" style="color: #009e9e">GET INVOLVED</a>
+    <a href="#">CONTACT US</a>
+</div>
+<h1> Find women's projects in your local area</h1>
+    <div style="width:100%;position:relative;min-height:300px;"><center>
+    <div id="world-map-markers" style="width:100%;height:100%;position: absolute;"></center></div>
+    </div>
+    <div id="markerSelectedtitle" style="position:relative; top:160px; height: 10px;"></div>
+    <div id="markerSelected" style="position:relative; top:80px; height: 95px;"></div>
+    <script>
+    $(function(){
+      $('#world-map-markers').vectorMap({map: 'world_mill',
+        zoomOnScroll: false,
+        zoomButtons: false,
+        backgroundColor: '#06050a',/*background*/
+        markerStyle: {
+            initial: {
+                fill: 'white',
+                stroke: '#008d8d',
+                "fill-opacity": 1,
+                "stroke-width": 3,
+                r: 8.5
+            },
+            hover: {
+                fill: '#00b7b7',
+                stroke: 'white',
+                "stroke-width": 2,
+                cursor: 'pointer'
+            },
+            selected: {
+                fill: '#006666',/*circle fill*/
+                "stroke-width": 3,
+                r: 10,
+                stroke: 'white',
+            },
+            selectedHover: {}
+        },
+        regionStyle: {
+            initial: {
+                fill: '#e6ffff',/*map colour*/
+                "fill-opacity": 1,
+                stroke: 'none',
+                "stroke-width": 0,
+                "stroke-opacity": 1
+            },
+            hover: {
+                "fill-opacity": 1,
+                fill: ' #0d5a5a',/*map hover colour*/
+                cursor: 'default'
+            }
+        },
+       onRegionTipShow: function (e, label, code) {
+    e.preventDefault();
+},
+        markerLabelStyle: {
+          initial: {
+          fill: '#e67e00'
+          }
+        },
+      labels: {
+            markers: {
+                render: function(code) {
+                    if(code == '0') {
+                        return "USA";
+                    }
+                    if(code == '1') {
+                        return "NYC";
+                    }
+                    if(code == '2') {
+                        return "Bahamas";
+                    }
+                    if(code == '3') {
+                        return "Caribbean";
+                    }
+                    if(code == '4') {
+                        return "India";
+                    }
+                    if(code == '5') {
+                        return "Australia";
+                    }
+                    if(code == '6') {
+                        return "";
+                    }
+                    if(code == '7') {
+                        return "";
+                    }
+                    if(code == '8') {
+                        return "";
+                    }
+                    if(code == '9') {
+                        return "China";
+                    }
+                    if(code == '10') {
+                        return "Pakistan";
+                    }
+                    if(code == '11') {
+                        return "Somalia";
+                    }
+                }
+            }
+        },
+        markers: [
+            {latLng: [37.09, -95.71]},/*US*/
+            {latLng: [40.71, -74.0]},/*NY*/
+            {latLng: [25.02, -78.03]},/*Bahamas*/
+            {latLng: [17.05, -61.75]},/*Caribbean*/
+            {latLng: [14.65, 76.96]},/*India*/
+            {latLng: [-33.86, 151.20]},/*AUS*/
+            {latLng: [51.50, -0.12]},/*UK*/
+            {latLng: [43.81, 15.96]},/*Croatia*/
+            {latLng: [48.82, 16.36]},/*Vienna*/
+            {latLng: [31.26, 121.52]},/*China*/
+            {latLng: [34.77, 73.35]},/*Pakistan*/
+            {latLng: [2.04, 45.31]}],/*Somalia*/
+        onMarkerClick: function(event, code) {
+          console.log ("here");
+            if(code == '0') {
+                $("#markerSelectedtitle").text('A Window Between Worlds');
+                $("#markerSelected").text('If you were inspired by the Guerrilla Girls mixing of art and activism, then you might also be interested in A Window Between Worlds, an organisations that uses art as a means of empowerment and healing for women who have experiences domestic violence. You might want to get involved as an volunteer.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+
+            } else if(code == '1') {
+                $("#markerSelectedtitle").text('Elizabeth A. Sackler Centre');
+                $("#markerSelected").text('For those based in New York, take a visit to the Elizabeth A. Sackler Centre for Feminist Art, in the Brooklyn Museum, where you can see iconic pieces of feminist art, such as Judy Chicago’s The Dinner Party.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('eu');
+
+            } else if(code == '2') {
+                $("#markerSelectedtitle").text('Bahamas Crisis Center');
+                $("#markerSelected").text('If you have the time and are based in the Bahamas, why not volunteer at your local Bahamas Crisis Centre.The centre offers free counselling among other services for women and children who are experiencing abuse. They also run a helpline (Tel:(242)03280 0922).');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+
+            } else if(code == '3') {
+                $("#markerSelectedtitle").text('#LifeinLeggings');
+                $("#markerSelected").text('“Life In Leggings: Caribbean Alliance Against Gender Based Violence” is a charity in Barbados, created to confront gender-based violence in the Caribbean region.Take part in online activism, retweeting or sharing your own stories. Using #lifeinleggings, a hashtag started to encourage women to be empowered to speak out against sexual violence as part of forming a supportive online community for Caribbean women.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '4') {
+                $("#markerSelectedtitle").text('Sayfty');
+                $("#markerSelected").text('Inspired by the fearless work of indian activists like Kavita Krishnan, then why not get involved in women’s groups in India. Sayfty is a group that aims to empower women to be more aware of their rights and works with communities to tackle violence against women. It is entirely reliant on volunteers, so why not join their team of volunteers.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '5') {
+                $("#markerSelectedtitle").text('Close the Gap Campaign');
+                $("#markerSelected").text('Why not contribute to the work of increasing equality for aboriginal communities. You can join the Close the Gap campaign by pledging your support online, organising an event on the National Close the Gap day, or fundraising.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+                        } else if(code == '6') {
+                $("#markerSelectedtitle").text('Sisters Uncut');
+                $("#markerSelected").text('You can help fight domestic violence in the UK by joining a Sisters Uncut group to take direct action in your local area. Sisters Uncut meets weekly on Thursday evenings in North, South and East London.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '7') {
+                $("#markerSelectedtitle").text('B.a.B.e.');
+                $("#markerSelected").text('Work on one for B.a.B.e.s campaigns to achieve gender equality: from advocacy to counselling to provinding psychological support.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '8') {
+                $("#markerSelectedtitle").text('Women Without Borders');
+                $("#markerSelected").text('Want to help achieve global security? Join Women Without Borders campaign of women combatting violent extremism to create a future without fear, suppression and violence.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '9') {
+                $("#markerSelectedtitle").text('China Migrant Justice Centre');
+                $("#markerSelected").text('Connect with the China Migrant Justice Centre to help female migrant workers get access to legal services, healthcare, housing, decent employment, and education for children.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '10') {
+                 $("#markerSelectedtitle").text('Malala Fund');
+                $("#markerSelected").text('Why not contribute to the work of the Malala Fund to secure girls right to a minimum of 12 years of quality education, particularly in the global south.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+            } else if(code == '11') {
+               $("#markerSelectedtitle").text(' Elman Peace and Human Rights Center');
+                $("#markerSelected").text('Volunteer with the Elman Peace and Human Rights Center. The center provides counseling, health and housing support for women who have experienced domestic violence in Somalia.');
+                var $map = $('#world-map-markers').vectorMap('get', 'mapObject');
+                $map.clearSelectedMarkers();
+                $map.setSelectedMarkers([code]);
+
+                $('[name="location-selected"]').val('');
+             } else {
+                $("#markerSelected").text('');
+        }
+}
+    });
+});
+</script>
+</body>
+</html>
