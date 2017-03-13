@@ -1,162 +1,166 @@
-body {
-    margin: 0px;
-}
+    body {
+        margin: 0px;
+    }
 
-body {
-  text-align:center;
-  margin: 0px;
-  background-color: #06050a;
-}
-div.container1 {
-    font-family:  'Comfortaa', cursive;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-}
-div.container1 a {
-    color: #FFF;
-    font-size: 15px;
-    margin: 6px;
-    padding: 6px 6px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    text-decoration: none;
-}
-.lime {
-    background: rgba(0,0,0,0);
-}
-div.pullUp a:before {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-div.pullUp a:hover:before {
-    height: 100%;
-}
+    div.container1 {
+        font-family:  'Comfortaa', cursive;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
 
+    div.container1 a {
+        color: #FFF;
+        font-size: 15px;
+        margin: 6px;
+        padding: 6px 6px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-div.container {
-    font-family: 'Comfortaa', cursive;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: center;
-}
-div.container a {
-    color: #FFF;
-    font-size: 15px;
-    margin: 6px;
-    padding: 6px 6px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    text-decoration: none;
-}
-.lime {
-    background: rgba(0,0,0,0);
-}
-div.pullUp a:before {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-    content: '';
-    background: #FFF;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-div.pullUp a:hover:before {
-    height: 100%;
-}
-svg {
-    margin-top: -80px;
-}
-body {
-    font-family: 'Comfortaa';
-    background-color: #06050a;
-}
-.jvectormap-container {
-    height: 650px;
-    width: 975px;
-}
-#markerSelectedtitle {
-    font-size: 20px;
-    font-family: 'Comfortaa';
-    color: #c9ffe5;
-    z-index: 1;
-    padding: 20px 300px 100px 30px;
-}
-#markerSelected {
-    padding: 18px 30px 10px 30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Comfortaa';
-    color: #06050a;
-    background-color: #ebede3;
-    border-right: 5px solid #b2ffff;
-    border-left: 5px solid #b2ffff;
-}
-h1 {
-    font-family: 'comfortaa';
-    padding: 25px 0px 20px 0px;
-    text-align: center;
-    color: white;
-    font-size: 23px;
-    font-weight:200;
-    margin: auto;
-    margin-bottom: 2%;
-    border-bottom: 2px solid #91a99e;
-    width: 800px;
-}
-p {
-    font-size: 17.5px;
-    padding-top: 10px;
-    margin: 0 auto;
-    font-family: 'Arsenal';
-    color: white;
-    text-align: center;
-}
-@media (max-width: 500px) {
+    div.gray a:before
+    {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        bottom: 0px;
+        content: '';
+        background: #FFF;
+        opacity: 0.3;
+        transition: all 0.3s;
+    }
+
+    div.gray a:hover:before
+    {
+        height: 100%;
+    }
+
+    div.container {
+        font-family: 'Comfortaa', cursive;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+    }
+    div.container a {
+        color: #FFF;
+        font-size: 15px;
+        margin: 6px;
+        padding: 6px 6px;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .lime {
+        background: rgba(0,0,0,0);
+    }
+    div.pullUp a:before {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        bottom: 0px;
+        content: '';
+        background: #FFF;
+        opacity: 0.3;
+        transition: all 0.3s;
+    }
+    div.pullUp a:hover:before {
+        height: 100%;
+    }
+    svg {
+        margin-top: -80px;
+    }
+    body {
+        font-family: 'Comfortaa';
+        background-color: #06050a;
+    }
     .jvectormap-container {
-        width: 480px;
+        height: 650px;
+        width: 975px;
+    }
+    #markerSelectedtitle {
+        font-size: 20px;
+        font-family: 'Comfortaa';
+        color: #c9ffe5;
+        z-index: 1;
+        padding: 20px 300px 100px 30px;
+    }
+    #markerSelected {
+        padding: 18px 30px 10px 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Comfortaa';
+        color: #06050a;
+        background-color: #ebede3;
+        border-right: 5px solid #b2ffff;
+        border-left: 5px solid #b2ffff;
     }
     h1 {
         font-family: 'comfortaa';
         padding: 25px 0px 20px 0px;
         text-align: center;
         color: white;
-        font-size: 18px;
+        font-size: 23px;
+        font-weight:200;
         margin: auto;
-        margin-bottom: 10px;
+        margin-bottom: 2%;
         border-bottom: 2px solid #91a99e;
-        width: 400px;
+        width: 800px;
     }
-    #markerSelectedtitle {
-        top: 10px;
-        font-size: 15px;
-        margin: auto 0;
-        width: 100%;
-    }
-    #markerSelected {
-        top: 10px;
-        font-size: 12px;
-        height: 800px;
-        padding: 8px 5px 5px 5px;
-    }
-    div.container {
-        font-family: 'Comfortaa', cursive;
+    p {
+        font-size: 17.5px;
+        padding-top: 10px;
         margin: 0 auto;
-        padding: 10px;
-        font-size: 29px;
+        font-family: 'Arsenal';
+        color: white;
         text-align: center;
+    }
+    @media (max-width: 500px) {
+        .jvectormap-container {
+            width: 480px;
+        }
+        h1 {
+            font-family: 'comfortaa';
+            padding: 25px 0px 20px 0px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin: auto;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #91a99e;
+            width: 400px;
+        }
+        #markerSelectedtitle {
+            top: 10px;
+            font-size: 15px;
+            margin: auto 0;
+            width: 100%;
+        }
+        #markerSelected {
+            top: 10px;
+            font-size: 12px;
+            height: 800px;
+            padding: 8px 5px 5px 5px;
+        }
+        div.container {
+            font-family: 'Comfortaa', cursive;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 29px;
+            text-align: center;
+        }
+    }
+    #logowomeninspire
+    {
+    position: absolute;
+    left: 10;
+    top: 16;
+    font-size: 15px;
     }
