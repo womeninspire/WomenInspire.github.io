@@ -1,6 +1,44 @@
 body {
     margin: 0px;
 }
+
+div.container1 {
+    font-family:  'Comfortaa', cursive;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+div.container1 a {
+    color: #FFF;
+    font-size: 15px;
+    margin: 6px;
+    padding: 6px 6px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.gray a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.gray a:hover:before
+{
+    height: 100%;
+}
+
 div.container {
     font-family: 'Comfortaa', cursive;
     margin: 0 auto;
@@ -66,7 +104,7 @@ body {
 }
 h1 {
     font-family: 'comfortaa';
-    padding: 25px 0px 20px 0px; 
+    padding: 25px 0px 20px 0px;
     text-align: center;
     color: white;
     font-size: 23px;
@@ -118,4 +156,11 @@ p {
         font-size: 29px;
         text-align: center;
     }
+}
+#logowomeninspire
+{
+position: absolute;
+left: 10;
+top: 16;
+font-size: 15px;
 }

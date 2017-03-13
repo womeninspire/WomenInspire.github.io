@@ -10,7 +10,7 @@ div.container1 {
     text-align: center;
 }
 div.container1 a {
-    color: #FFF;        
+    color: #FFF;
     font-size: 15px;
     margin: 6px;
     padding: 6px 6px;
@@ -46,10 +46,10 @@ h1 {
   color: white;
 
   margin: auto;
-  border-bottom: 3px solid gray;  
+  border-bottom: 3px solid gray;
   width: 700px;
   transition: 0.5s ease;
-  height: 10px;    
+  height: 10px;
 }
 h1:hover {
     border-bottom: 3px solid white;
@@ -119,9 +119,9 @@ img:hover {
     margin: 0.3em;
     padding: 1em 1.4em;
     text-align: center;
-    vertical-align: middle;  
+    vertical-align: middle;
 }
-img { 
+img {
     height: auto;
 }
 @media (max-width: 500px) {
@@ -131,10 +131,10 @@ img {
         font-size: 30px;
         color: white;
         margin: auto;
-        border-bottom: 3px solid gray;  
+        border-bottom: 3px solid gray;
         width: 300px;
         transition: 0.5s ease;
-        height: 10px;    
+        height: 10px;
       }
     h1:hover {
         border-bottom: 3px solid white;
